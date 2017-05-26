@@ -13,7 +13,9 @@ else
 
     <h3><a href="/contact/@contact.GetId()">@contact.GetFirstName() @contact.GetLastName()</a></h3>
   }
-  <button type="submit" class="btn btn-danger">Clear all contacts</button>
+  <form action="/contacts/clear" method="post">
+    <button type="submit" class="btn btn-danger">Clear all contacts</button>
+  </form>
 }
 
 <h4><a href="/contact/create">Add a new contact<a/></h4>
