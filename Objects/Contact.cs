@@ -52,7 +52,7 @@ namespace AddressBook.Objects
     }
     public static Contact FindContact(int searchId)
     {
-      return _instances[searchId - 1];
+      return _instances[searchId];
     }
   }
 }
