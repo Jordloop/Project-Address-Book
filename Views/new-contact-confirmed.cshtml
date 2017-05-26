@@ -1,3 +1,12 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+
+<h2>You created a new contact!</h2>
+<h4>@Model.GetFirstName()</h4>
+<h4>@Model.GetLastName()</h4>
+<h4>@Model.GetAddress()</h4>
+<h4>@Model.GetPhone()</h4>
+<h4>@Model.GetId()</h4>
+
+<a href="/">Return Home</a>
