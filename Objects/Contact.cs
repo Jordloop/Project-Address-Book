@@ -13,14 +13,14 @@ namespace AddressBook.Objects
 
     public Contact(string firstName, string lastName, string address, string phone)
     {
-      _firstName = contactFirstName;
-      _lastName = contactLastName;
-      _address = contactAddress;
-      _phone = contactPhone;
+      _firstName = firstName;
+      _lastName = lastName;
+      _address = address;
+      _phone = phone;
       _id = _instances.Count; //  ASSIGNS UNIQUE ID TO EACH INSTANCE OF CONTACT WHEN INSTANTIATED
       _instances.Add(this); //  ADDS TO LIST OF ALL CONTACTS WHEN INSTANTIATED
     }
-
+//   GET MTHODS
     public string GetFirstName()
     {
       return _firstName;
@@ -41,14 +41,14 @@ namespace AddressBook.Objects
     {
       return _id;
     }
-//  ^ OBJECT METHODS ^ -- v STATIC METHODS v
+//  STATIC METHODS
     public static List<Contact> GetAllContacts()
     {
       return _instances;
     }
     public static void ClearAllContacts()
     {
-      instances.Clear();
+      _instances.Clear();
     }
     public static Contact FindContact(int searchId)
     {

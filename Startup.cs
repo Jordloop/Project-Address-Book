@@ -1,4 +1,3 @@
-
 using System.IO;
 using Microsoft.AspNet.Builder;
 using Nancy.Owin;
@@ -6,7 +5,7 @@ using Nancy;
 using Nancy.ViewEngines.Razor;
 using System.Collections.Generic;
 
-namespace ToDo.Objects
+namespace AddressBook.Objects
 {
   public class Startup
   {

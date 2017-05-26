@@ -6,7 +6,7 @@
     "Nancy.ViewEngines.Razor": "1.3.0"
   },
   "commands": {
-    "kestrel": "Microsofe.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004"
+    "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5004"
   },
   "frameworks": {
     "dnx451": {}
