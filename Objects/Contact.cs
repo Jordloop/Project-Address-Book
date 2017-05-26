@@ -10,15 +10,15 @@ namespace AddressBook.Objects
     private string _phone;
     private int _id;
     private static List<Contact> _instances = new List<Contact> {};
-
+// CONTACTS CONSTRUCTOR
     public Contact(string firstName, string lastName, string address, string phone)
     {
       _firstName = firstName;
       _lastName = lastName;
       _address = address;
       _phone = phone;
-      _id = _instances.Count; //  ASSIGNS UNIQUE ID TO EACH INSTANCE OF CONTACT WHEN INSTANTIATED
-      _instances.Add(this); //  ADDS TO LIST OF ALL CONTACTS WHEN INSTANTIATED
+      _id = _instances.Count;
+      _instances.Add(this);
     }
 //   GET MTHODS
     public string GetFirstName()
